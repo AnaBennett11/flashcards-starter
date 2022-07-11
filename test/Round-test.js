@@ -84,11 +84,7 @@ describe('Round', function() {
         expect(round.calculatePercentCorrect()).to.equal(50);
     });
 
-    it('should end the round and return a statement', function() {
-        round.takeTurn('object');
-        round.takeTurn('spleen');
-        expect(round.endRound()).to.equal('** Round over! ** You answered 50% of the questions correctly!')
-    })
+    
 
 
 });

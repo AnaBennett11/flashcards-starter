@@ -15,17 +15,17 @@ describe('Game', function() {
     }); 
     it('should create new cards out of data', function () {
         let game = new Game();
-        game.startGame();
+        game.createCards();
         expect(game.cards[0]).to.be.an.instanceof(Card);
     });
     it('should create a new deck out of the new cards', function() {
         let game = new Game();
-        game.startGame();
+        game.createDeck();
         expect(game.deck).to.be.an.instanceOf(Deck);
     })
     it('should create a new round with the new deck', function () {
         let game = new Game();
-        game.startGame();
+        game.createRound();
         expect(game.currentRound).to.be.an.instanceOf(Round);
     })
 });
